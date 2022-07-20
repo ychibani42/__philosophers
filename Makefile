@@ -6,7 +6,7 @@
 #    By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/26 10:09:52 by ychibani          #+#    #+#              #
-#    Updated: 2022/07/19 19:25:27 by ychibani         ###   ########.fr        #
+#    Updated: 2022/07/20 17:36:12 by ychibani         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,7 @@ re:				fclean all
 git:		
 			git add .
 			git commit -m "$m"
-			git push -u origin master
+			git push -f origin master
 
 -include ${DEPS_FILES}
 
