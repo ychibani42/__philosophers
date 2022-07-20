@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:20:54 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/18 18:27:20 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/20 20:16:59 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 
 # ifndef _ERROR_
 #  define _ERROR_ -1
+# endif
+
+# ifndef _INT_SIZE_MAX_
+#  define _INT_SIZE_MAX_ 12
+# endif
+
+# ifndef _SUCCESS_
+#  define _SUCCESS_ 1
 # endif
 
 #endif
