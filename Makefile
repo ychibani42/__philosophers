@@ -6,7 +6,7 @@
 #    By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/26 10:09:52 by ychibani          #+#    #+#              #
-#    Updated: 2022/07/18 20:51:33 by ychibani         ###   ########.fr        #
+#    Updated: 2022/07/19 19:25:27 by ychibani         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ INCS				=	-I ./includes
 
 CC					=	clang
 
-CFLAGS				=  	-Wall -Werror -Wextra 
+CFLAGS				=  	-Wall -Werror -Wextra -DLinux
 
 RM					=	rm -rf
 
@@ -62,7 +62,7 @@ all:			${NAME}
 
 ${NAME}:		${OBJS_FILES}
 				@echo "${_CYAN}${_BOLD}Philosophers files compiled !${_END}..."
-				@${CC} ${CFLAGS} ${INCS} ${OBJS_FILES} -o ${NAME}
+				@${CC} ${CFLAGS} -lpthread ${INCS} ${OBJS_FILES} -o ${NAME}
 
 clean:
 				@echo "Deleting ${_RED}${_BOLD}binary files${_END}..."
