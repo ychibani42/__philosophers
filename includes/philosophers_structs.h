@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:13:28 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/20 17:27:32 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/22 21:42:08 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,12 @@
 
 typedef struct s_philo
 {
-    int timestamp;
-    int id;
+    pthread_t	store_thread;
+    int			id;
+    int			eat;
+    int			die;
+    int			sleep;
 
 } t_philo;
-
-typedef struct s_stock
-{
-    int         stock;
-    pthread_t   store_thread;
-    pthread_t   client_thread[5];
-
-} t_stock;
-
-static t_stock store =
-{
-    .stock = 20,
-};
 
 #endif

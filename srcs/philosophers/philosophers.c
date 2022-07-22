@@ -13,20 +13,17 @@
 #include "philosophers.h"
 
 
-
-void    __print_philo_status(t_philo *philo, int ac)
+void    __print_philo_status(t_philo *philo, char **av)
 {
     int i;
 
     i = 0;
-    memset(philo, 0, sizeof(t_philo) * ac);
-    while (i < ac)
+    while (i < atol(av[1]))
     {
-        printf("%d %d has taken a fork\n", philo->timestamp, philo->id);
-        printf("%d %d is eating\n", philo->timestamp, philo->id);
-        printf("%d %d is sleeping\n", philo->timestamp, philo->id);
-        printf("%d %d died\n", philo->timestamp, philo->id);
-        printf("\n\n");
+        printf("philo id : %d\n", philo[i].id);
+        printf("philo time to die = %d\n", philo[i].die);
+        printf("philo time to eat = %d\n", philo[i].eat);
+        printf("philo time to eat = %d\n", philo[i].sleep);
         i++;
     }
 }
@@ -35,10 +32,9 @@ int main(int ac, char **av)
 {
     t_philo *philo;
 
-    (void)av;
-    philo = malloc(sizeof(t_philo) * ac);
-    if (!(ac == 5))
-        return (__usage(), _ERROR_);
-    __print_philo_status(philo, ac);
+    if (parsing(ac, av) == _ERROR_)
+        return (_ERROR_);
+    philo = __init_data(av);
+    __print_philo_status(philo, av);
     free(philo);
 }

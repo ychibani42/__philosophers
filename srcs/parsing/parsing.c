@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:44:07 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/20 20:27:07 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/20 22:36:42 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ int nbr_check(char *str)
 	long nbr;
 
 	nbr = _atol_(str);
-	if (int_len(nbr) > _INT_SIZE_MAX_ || nbr > INT_MAX || nbr < INT_MIN)
+	if (int_len(nbr) > _INT_SIZE_MAX_ || nbr > INT_MAX || nbr < INT_MIN || nbr <= 0)
 		return (_ERROR_);
 	return (_SUCCESS_);
 }
