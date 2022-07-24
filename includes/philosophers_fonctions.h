@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:21:35 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/22 21:44:57 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:05:47 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 int     parsing(int ac, char **av);
 
 
-t_philo *__init_data(char **av);
+t_program_data *__init_data(char **av);
 
 /*
 **       Philo

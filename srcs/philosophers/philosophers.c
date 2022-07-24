@@ -23,70 +23,20 @@ size_t     exact_time(void)
 }
 
 
-void    __print_philo_status(t_philo *philo, char **av)
-{
-    int i;
-
-    i = 0;
-    while (i < atol(av[1]))
-    {
-        printf("philo id : %d\n", philo[i].id);
-        printf("philo time to die = %lu\n", philo[i].die + exact_time());
-        printf("philo time to eat = %lu\n", philo[i].eat + exact_time());
-        printf("philo time to sleep = %lu\n", philo[i].sleep + exact_time());
-        i++;
-    }
-}
-
-void    *life(void *philo)
-{
-    int      i;
-    t_philo *philos;
-
-    i = 0;
-    philos = (t_philo *)philo;
-    pthread_mutex_lock(&philos->mutex);
-    while (i < 10)
-    {
-        if (philos[i].id)
-            printf("philo %d is making his life\n", philos[i].id);
-        i++;
-    }
-    pthread_mutex_unlock(&philos->mutex);
-    return (NULL);
-}
 
 int main(int ac, char **av)
 {
-    t_philo *philo;
-    int     i;
-
-    i = 0;
+    t_program_data *data;
     if (parsing(ac, av) == _ERROR_)
         return (_ERROR_);
-
     /*
     ** Initialiser les structs 
     */
-
-    philo = __init_data(av);
-
-    while (i < 10)
-    {
-        pthread_create(&philo[i].process, NULL, life, (void *)philo);
-        i++;
-    }
-
+    data = __init_data(av);
     /*
     **  Lancement de la Simulation
     */
-    
     //__simulation_launcher(data);
-    __print_philo_status(philo, av);
-    while (i < 10)
-    {
-        pthread_join(philo[i].process, NULL);
-        i++;
-    }
-    free(philo);
+    // __print_philo_status(philo, av);
+    free(data);
 }

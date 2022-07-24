@@ -6,34 +6,84 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 16:06:13 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/23 21:48:28 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:04:07 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-t_philo *__init_data(char **av)
+t_info	__get_info(char **av)
 {
-	int		 i;
-	int		nb_philo;
-	t_philo	*philo;
+	int	i;
+	int	nb_philos;
+	t_info info_to_return;
 
 	i = 0;
-	nb_philo = atol(av[1]);
-	philo = (t_philo *)malloc(sizeof(t_philo) * nb_philo);
-	if (!philo)
+	nb_philos = atol(av[1]);
+	memset(&info_to_return, 0, sizeof(info_to_return));
+	info_to_return.nb_philo = nb_philos;
+	info_to_return.time_to_die = atol(av[2]);
+	info_to_return.time_to_eat = atol(av[3]);
+	info_to_return.time_to_sleep = atol(av[4]);
+	return (info_to_return);
+}
+
+t_philo *__init_philos(t_program_data *data, t_info infos)
+{
+	int	i;
+	t_philo *philos;
+
+	i = 0;
+	philos = (t_philo *)malloc(sizeof(t_philo) * infos.nb_philo);
+	if (!philos)
 		return (NULL);
-	memset(philo, 0, sizeof(t_philo) * nb_philo);
-	while (i < nb_philo)
+	memset(philos, 0, sizeof(t_philo) * infos.nb_philo);
+	while (i < infos.nb_philo)
 	{
-		philo[i].id = (int)i;
-		philo[i].die = (int)atol(av[2]);
-		philo[i].eat = (int)atol(av[3]);
-		philo[i].sleep = (int)atol(av[4]);
-		// philo[i].mutex = PTHREAD_MUTEX_INITIALIZER;
-		// philo[i].process = PTHREAD_INI;
-		// philo[i].store_thread = pthread_create(&philo[i].store_thread, NULL, philo_routine(), NULL);
+		philos[i].id = i;
+		philos[i].left_fork = &data->forks[i];
+		philos[i].right_fork = &data->forks[(i + 1) % infos.nb_philo];
+		philos[i].start = exact_time();
+		philos[i].end = exact_time + infos.time_to_die;
+		philos[i].philo_info = infos;
+		philos[i].global = data;
+	}
+}
+
+t_fork *__init_forks_table(t_info infos)
+{
+	t_fork *fork_table;
+	int		i;
+
+	i = 0;
+	fork_table = (t_fork *)malloc(sizeof(t_fork) * infos.nb_philo);
+	if (!fork_table)
+		return (NULL);
+	memset(fork_table, 0, infos.nb_philo);
+	while (i < infos.nb_philo)
+	{
+		pthread_mutex_init(&fork_table[i].fork, NULL);
+		fork_table[i].is_taken = _FALSE_;
 		i++;
 	}
-	return (philo);
+	return (fork_table);
+}
+
+t_program_data *__init_data(char **av)
+{
+	t_program_data *data;
+	int		i;
+
+	i = 0;
+	data = (t_program_data *)malloc(sizeof(t_program_data));
+	if (!data)
+		return (NULL);
+	data->infos = __get_info(av);
+	data->philos = __init_philos(data, data->infos);
+	data->forks = __init_forks_table(data->infos);
+	if (!data->philos || !data->forks)
+		return (__clean(data->infos));
+	data->die = _FALSE_;
+	data->time_of_death = exact_time() + 80;
+	return (data);
 }
