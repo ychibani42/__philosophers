@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 17:49:56 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/23 21:40:17 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/25 16:58:50 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 void *eat(void *philo);
 
-void *think(void *philo);
+void *think(void *philo)
+{
+    
+}
 
 void *sleep(void *philo);
 

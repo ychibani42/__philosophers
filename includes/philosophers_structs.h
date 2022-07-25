@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:13:28 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/24 13:56:39 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:00:17 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 typedef struct s_fork
 {
-	pthread_t	fork;
-	int			is_taken;
-	// 1 ou 0
+	pthread_mutex_t	fork;
+	int				is_taken;
 
 } t_fork;
 
@@ -53,9 +52,9 @@ typedef struct s_program_data
 	t_philo 		*philos;
 	size_t			starting_proccesser;
 	int				die;
-	int				time_of_death;
-	int				time_of_start;
-
+	pthread_t *thread_tab;
+	// pthread_mutex_t print_mutex;
+	// pthread_mutex_t _mutex;
 } t_program_data;
 
 #endif

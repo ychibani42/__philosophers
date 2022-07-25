@@ -6,13 +6,14 @@
 #    By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/26 10:09:52 by ychibani          #+#    #+#              #
-#    Updated: 2022/07/22 21:39:50 by ychibani         ###   ########.fr        #
+#    Updated: 2022/07/25 16:14:46 by ychibani         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS_FILES			=	srcs/philosophers/philosophers.c	\
 						srcs/parsing/parsing.c				\
 						srcs/init/init_data.c				\
+						srcs/clean/clean.c					\
 
 HEADER_FILES		=	philosophers_structs.h 			\
 						philosophers_fonctions.h		\

@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 16:06:13 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/24 16:04:07 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/25 16:21:34 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,13 @@ t_philo *__init_philos(t_program_data *data, t_info infos)
 		philos[i].id = i;
 		philos[i].left_fork = &data->forks[i];
 		philos[i].right_fork = &data->forks[(i + 1) % infos.nb_philo];
-		philos[i].start = exact_time();
-		philos[i].end = exact_time + infos.time_to_die;
+		philos[i].start = exact_time() + 80;
+		philos[i].end = exact_time() + infos.time_to_die;
 		philos[i].philo_info = infos;
 		philos[i].global = data;
+		i++;
 	}
+	return (philos);
 }
 
 t_fork *__init_forks_table(t_info infos)
@@ -79,11 +81,11 @@ t_program_data *__init_data(char **av)
 	if (!data)
 		return (NULL);
 	data->infos = __get_info(av);
-	data->philos = __init_philos(data, data->infos);
 	data->forks = __init_forks_table(data->infos);
+	data->philos = __init_philos(data, data->infos);
 	if (!data->philos || !data->forks)
-		return (__clean(data->infos));
+		return (__clean(data, data->infos), NULL);
 	data->die = _FALSE_;
-	data->time_of_death = exact_time() + 80;
+	data->starting_proccesser = exact_time() + 80;
 	return (data);
 }
