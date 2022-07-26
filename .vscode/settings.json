@@ -3,5 +3,7 @@
         "philosophers.h": "c",
         "philosophers_fonctions.h": "c",
         "philosophers_structs.h": "c"
-    }
+    },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
 }

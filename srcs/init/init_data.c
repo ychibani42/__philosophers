@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 16:06:13 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/25 16:21:34 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/25 16:21:34by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,6 @@ t_program_data *__init_data(char **av)
 		return (__clean(data, data->infos), NULL);
 	data->die = _FALSE_;
 	data->starting_proccesser = exact_time() + 80;
+    pthread_mutex_init(&data->mutex_printer, NULL);
 	return (data);
 }

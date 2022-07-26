@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:13:28 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/25 17:00:17 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/26 18:48:56 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ typedef struct s_info
 
 typedef struct s_philo
 {
-	// pthread_mutex_t	mutex;
 	int						id;
 	pthread_t				process;
 	struct s_program_data	*global;
@@ -53,8 +52,8 @@ typedef struct s_program_data
 	size_t			starting_proccesser;
 	int				die;
 	pthread_t *thread_tab;
-	// pthread_mutex_t print_mutex;
-	// pthread_mutex_t _mutex;
+	pthread_mutex_t mutex_printer;
+	// pthread_mutex_t mutex_;
 } t_program_data;
 
 #endif

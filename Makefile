@@ -6,11 +6,12 @@
 #    By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/26 10:09:52 by ychibani          #+#    #+#              #
-#    Updated: 2022/07/25 16:14:46 by ychibani         ###   ########.fr        #
+#    Updated: 2022/07/26 18:57:28 by ychibani         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS_FILES			=	srcs/philosophers/philosophers.c	\
+						srcs/philosophers/routine.c			\
 						srcs/parsing/parsing.c				\
 						srcs/init/init_data.c				\
 						srcs/clean/clean.c					\
@@ -29,7 +30,7 @@ INCS				=	-I ./includes
 
 CC					=	clang
 
-CFLAGS				=  	-Wall -Werror -Wextra -DLinux
+CFLAGS				=  	-Wall -Werror -Wextra -DLinux 
 
 RM					=	rm -rf
 
