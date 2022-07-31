@@ -44,7 +44,7 @@ t_philo *__init_philos(t_program_data *data, t_info infos)
 		philos[i].left_fork = &data->forks[i];
 		philos[i].right_fork = &data->forks[(i + 1) % infos.nb_philo];
 		philos[i].start = exact_time() + 80;
-		philos[i].end = exact_time() + infos.time_to_die;
+		philos[i].end = philos[i].start + infos.time_to_die;
 		philos[i].philo_info = infos;
 		philos[i].global = data;
 		i++;
@@ -86,7 +86,8 @@ t_program_data *__init_data(char **av)
 	if (!data->philos || !data->forks)
 		return (__clean(data, data->infos), NULL);
 	data->die = _FALSE_;
-	data->starting_proccesser = exact_time() + 80;
+	data->starting_proccesser = data->starting_proccesser;
     pthread_mutex_init(&data->mutex_printer, NULL);
+    pthread_mutex_init(&data->mutex_ressources, NULL);
 	return (data);
 }

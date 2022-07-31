@@ -5,5 +5,5 @@
         "philosophers_structs.h": "c"
     },
     "editor.tabSize": 4,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": false
 }

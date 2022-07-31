@@ -39,36 +39,49 @@ void	print_data(t_program_data *data)
 }
 
 
-void	__thread_init(t_program_data *data)
+int __simulation(t_program_data *data)
 {
 	int			i;
 
 	i = 0;
 	data->thread_tab = (pthread_t *)malloc(sizeof(pthread_t *) * data->infos.nb_philo);
+	if (!(data->thread_tab))
+		return (-1);
 	while (i < data->infos.nb_philo)
 	{
 		pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
 		i++;
 	}
+	return (42);
 }
 
+int	__simulation_finisher(t_program_data *data)
+{
+	int ret;
+    int i;
+
+    i = 0;
+    while (i < data->infos.nb_philo)
+    {
+		ret = pthread_join(data->thread_tab[i], &data->status);
+        i++;
+    }
+	pthread_mutex_destroy(&data->mutex_printer);
+	__clean(data, data->infos);
+	return (ret);
+}
 
 int main(int ac, char **av)
 {
 	t_program_data	*data;
+	int				ret;
 
 	if (parsing(ac, av) == _ERROR_)
 		return (_ERROR_);
 	data = __init_data(av);
 	if (!data)
 		return (_ERROR_);
-	/*
-	**  Lancement de la Simulation
-	*/
-	__thread_init(data);
-	for(int i = 0; i < data->infos.nb_philo; i++)
-	{
-		pthread_join(data->thread_tab[i], NULL);
-	}
-	__clean(data, data->infos);
+	__simulation(data);
+	ret = __simulation_finisher(data);
+	return (ret);
 }

@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:44:07 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/20 22:36:42 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:07:50 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ int __check_integer(char *str)
 
 int parsing(int ac, char **av)
 {
-	int i;
+	int	i;
 
 	if (!(ac == 5))
 		return (__usage(), _ERROR_);
