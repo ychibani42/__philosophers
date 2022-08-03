@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:21:35 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/26 18:58:15 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/03 17:45:21 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		parsing(int ac, char **av);
 */
 
 size_t	exact_time(void);
+void	state_printer(size_t time, pthread_mutex_t *printer_mutex, int id, char *state);
 
 
 /*
@@ -46,6 +47,13 @@ t_program_data	*__init_data(char **av);
 */
 
 void	*routine(void *data);
+
+
+/*
+**
+*/
+
+void	you_are_dead(t_philo *philo, int bool);
 
 /*
 **       Philo
