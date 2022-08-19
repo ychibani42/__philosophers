@@ -14,9 +14,9 @@
 
 t_info	__get_info(char **av)
 {
-	int	i;
-	int	nb_philos;
-	t_info info_to_return;
+	t_info	info_to_return;
+	int		i;
+	int		nb_philos;
 
 	i = 0;
 	nb_philos = atol(av[1]);
@@ -30,7 +30,7 @@ t_info	__get_info(char **av)
 
 t_philo *__init_philos(t_program_data *data, t_info infos)
 {
-	int	i;
+	int		i;
 	t_philo *philos;
 
 	i = 0;
@@ -40,7 +40,7 @@ t_philo *__init_philos(t_program_data *data, t_info infos)
 	memset(philos, 0, sizeof(t_philo) * infos.nb_philo);
 	while (i < infos.nb_philo)
 	{
-		philos[i].id = i;
+		philos[i].id = i + 1;
 		philos[i].left_fork = &data->forks[i];
 		philos[i].right_fork = &data->forks[(i + 1) % infos.nb_philo];
 		philos[i].start = exact_time() + 80;
@@ -86,7 +86,6 @@ t_program_data *__init_data(char **av)
 	if (!data->philos || !data->forks)
 		return (__clean(data, data->infos), NULL);
 	data->die = _FALSE_;
-	data->starting_proccesser = data->starting_proccesser;
     pthread_mutex_init(&data->mutex_printer, NULL);
     pthread_mutex_init(&data->mutex_ressources, NULL);
 	return (data);

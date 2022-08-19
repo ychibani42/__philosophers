@@ -1,9 +1,10 @@
 {
     "files.associations": {
-        "philosophers.h": "c",
-        "philosophers_fonctions.h": "c",
-        "philosophers_structs.h": "c"
-    },
+		"philosophers.h": "c",
+		"philosophers_fonctions.h": "c",
+		"philosophers_structs.h": "c",
+		"philosophers_defines.h": "c"
+	},
     "editor.tabSize": 4,
     "editor.insertSpaces": false
 }

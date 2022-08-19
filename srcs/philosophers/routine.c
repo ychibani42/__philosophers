@@ -6,96 +6,44 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 17:49:56 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/03 17:49:03 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/19 18:03:04 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-// void *eat(void *philo);
-
-// void *think(void *philo)
-// {
-// }
-
-// void *sleep(void *philo);
-
-// void *die(void *philo)
-// {
-// 	t_philo *philos;
-
-// 	philos = (t_philo *)philo;
-// 	philos->global->die = 1;
-// }
-
-void	state_printer(size_t time, pthread_mutex_t *printer_mutex, int id, char *state)
+void	state_printer(size_t time, pthread_mutex_t *printer_mutex, 
+							int id, char *state)
 {
 	pthread_mutex_lock(printer_mutex);
-	printf("%zu Philo %d %s\n", exact_time() - time, id + 1, state);
+	printf("%zu philo %d %s\n", time, id, state);
 	pthread_mutex_unlock(printer_mutex);
 }
 
-void __think(size_t time)
+void	take_right_fork(t_philo *philo)
 {
-	usleep(time);
+	pthread_mutex_lock(&philo->right_fork->fork);
+	philo->right_fork->is_taken = _TRUE_;
+	state_printer(philo->end - exact_time(), &philo->global->mutex_printer, philo->id, "take right fork\n");
 }
 
-void take_right_fork(t_philo *philo)
+void	take_left_fork(t_philo *philo)
 {
-	while (exact_time() < philo->end)
-	{
-		pthread_mutex_lock(&philo->right_fork->fork);
-		if (philo->right_fork->is_taken == _FALSE_)
-		{
-			philo->right_fork->is_taken = _TRUE_;
-			pthread_mutex_unlock(&philo->right_fork->fork);
-			break ;
-		}
-		pthread_mutex_unlock(&philo->right_fork->fork);
-	}
-	if (exact_time() > philo->end)
-		return (you_are_dead(philo, -1));
-	state_printer(philo->start, &philo->global->mutex_printer, philo->id, TAKE_FORK);
+	pthread_mutex_lock(&philo->left_fork->fork);
+	philo->left_fork->is_taken = _TRUE_;
+	state_printer(philo->end - exact_time(), &philo->global->mutex_printer, philo->id, "take left fork\n");
 }
 
-void take_left_fork(t_philo *philo)
+void	take_forks(t_philo *philo)
 {
-	while (exact_time() < philo->end)
-	{
-		pthread_mutex_lock(&philo->left_fork->fork);
-		if (!philo->left_fork->is_taken)
-		{
-			philo->left_fork->is_taken = _TRUE_;
-			pthread_mutex_unlock(&philo->left_fork->fork);
-			break;
-		}
-		pthread_mutex_unlock(&philo->left_fork->fork);
-	}
-	if (exact_time() > philo->end)
-		return (you_are_dead(philo, -1));
-	state_printer(philo->start, &philo->global->mutex_printer, philo->id, TAKE_FORK);
-}
-
-void take_forks(t_philo *philo)
-{
-	take_right_fork(philo);
 	take_left_fork(philo);
+	take_right_fork(philo);
 }
 
-void eat(t_philo *philo)
+void	drop_forks(t_philo *philo)
 {
-	if (exact_time() > philo->end)
-		state_printer(philo->start, &philo->global->mutex_printer, philo->id, DIED);
-	while (exact_time() < philo->start + philo->philo_info.time_to_eat)
-			;
-	state_printer(philo->start, &philo->global->mutex_printer, philo->id, IS_EATING);
-}
-
-void drop_fork(t_fork *fork)
-{
-	pthread_mutex_lock(&fork->fork);
-	fork->is_taken = _FALSE_;
-	pthread_mutex_unlock(&fork->fork);
+	pthread_mutex_unlock(&philo->left_fork->fork);
+	pthread_mutex_unlock(&philo->right_fork->fork);
 }
 
 void *routine(void *data)
@@ -105,19 +53,15 @@ void *routine(void *data)
 	philo = (t_philo *)data;
 	while (exact_time() < philo->start)
 		;
-	if (philo->id % 2 == 0)
-		usleep(150);
+	philo->end = exact_time() + philo->philo_info.time_to_die;
+	if (philo->id % 2 == 1)
+		usleep(10000);
 	while (1)
 	{
-		if (exact_time() > philo->end)
-		{
-			state_printer(philo->start, &philo->global->mutex_printer, philo->id, DIED);
-			break;
-		}
 		take_forks(philo);
-		eat(philo);
-		drop_fork(philo->left_fork);
-		drop_fork(philo->right_fork);
+		state_printer(exact_time() - philo->start, &philo->global->mutex_printer, philo->id, IS_EATING);
+		usleep(philo->philo_info.time_to_sleep);
+		drop_forks(philo);
 	}
 	return ((void *)(__intptr_t)_SUCCESS_);
 }

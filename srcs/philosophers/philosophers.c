@@ -49,7 +49,15 @@ int __simulation(t_program_data *data)
 		return (-1);
 	while (i < data->infos.nb_philo)
 	{
-		pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
+		if (i % 2 == 0)
+			pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
+		i++;
+	}
+	i = 0;
+	while (i < data->infos.nb_philo)
+	{
+		if (i % 2 != 0)
+			pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
 		i++;
 	}
 	return (42);
@@ -67,6 +75,13 @@ int	__simulation_finisher(t_program_data *data)
         i++;
     }
 	pthread_mutex_destroy(&data->mutex_printer);
+	pthread_mutex_destroy(&data->mutex_ressources);
+	i = 0;
+	while (i < data->infos.nb_philo)
+	{
+		pthread_mutex_destroy(&data->forks[i].fork);
+		i++;
+	}
 	__clean(data, data->infos);
 	return (ret);
 }
@@ -80,7 +95,7 @@ int main(int ac, char **av)
 		return (_ERROR_);
 	data = __init_data(av);
 	if (!data)
-		return (_ERROR_);
+		return (printf("Malloc Error\n"), _ERROR_);
 	__simulation(data);
 	ret = __simulation_finisher(data);
 	return (ret);

@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:44:07 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/31 17:07:50 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/19 12:25:09 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,6 @@ int	int_len(int nb)
 	int i;
 
 	i = 0;
-	if (nb < 0)
-	{
-		i = 1;
-		nb = -nb;
-	}
 	while (nb)
 	{
 		nb /= 10;
@@ -65,23 +60,15 @@ long	_atol_(char *str)
 {
 	long nbr;
 	int i;
-	int sign;
 
 	nbr = 0;
 	i = 0;
-	sign = 1;
-	if (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			sign = -1;
-		i++;
-	}
 	while (ft_isdigit(str[i]))
 	{
 		nbr = nbr * 10 + (str[i] - '0');
 		i++;
 	}
-	return (nbr * sign);
+	return (nbr);
 }
 
 int nbr_check(char *str)
@@ -89,7 +76,7 @@ int nbr_check(char *str)
 	long nbr;
 
 	nbr = _atol_(str);
-	if (int_len(nbr) > _INT_SIZE_MAX_ || nbr > INT_MAX || nbr < INT_MIN || nbr <= 0)
+	if (int_len(nbr) > _INT_SIZE_MAX_ || nbr > INT_MAX || nbr <= 0)
 		return (_ERROR_);
 	return (_SUCCESS_);
 }
@@ -105,19 +92,19 @@ int __check_integer(char *str)
 		i++;
 	len = ft_strlen(&str[i]);
 	if (len > 10 || len == 0)
-		return (printf("Invalid Arg"), _ERROR_);
+		return (printf("Invalid Number\n"), _ERROR_);
 	while (str[i])
 	{
 		if (!ft_isdigit(str[i]))
-			return (printf("Pas Un Chiffre"), _ERROR_);
+			return (printf("Invalid Number\n"), _ERROR_);
 		i++;
 	}
 	if (nbr_check(str) == _ERROR_)
-		return (printf("Chiffre Trop Gros\n"), _ERROR_);
+		return (printf("Invalid Number\n"), _ERROR_);
 	return (_SUCCESS_);
 }
 
-int parsing(int ac, char **av)
+int	parsing(int ac, char **av)
 {
 	int	i;
 
