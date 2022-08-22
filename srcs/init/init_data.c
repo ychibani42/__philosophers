@@ -40,7 +40,7 @@ t_philo *__init_philos(t_program_data *data, t_info infos)
 	memset(philos, 0, sizeof(t_philo) * infos.nb_philo);
 	while (i < infos.nb_philo)
 	{
-		philos[i].id = i + 1;
+		philos[i].id = i;
 		philos[i].left_fork = &data->forks[i];
 		philos[i].right_fork = &data->forks[(i + 1) % infos.nb_philo];
 		philos[i].start = exact_time() + 80;

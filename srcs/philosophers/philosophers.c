@@ -23,19 +23,21 @@ size_t	exact_time(void)
 
 void	print_data(t_program_data *data)
 {
-	// printf("%d\n", data->infos.nb_philo);
-	// printf("%zu\n", data->infos.time_to_die);
-	// printf("%zu\n", data->infos.time_to_eat);
-	// printf("%zu\n", data->infos.time_to_sleep);
+	pthread_mutex_lock(&data->mutex_printer);
+	printf("nombre de philos : %d\n", data->infos.nb_philo);
+	printf("temps avant de mourir %zu\n", data->infos.time_to_die);
+	printf("temps pour manger %zu\n", data->infos.time_to_eat);
+	printf("temps pour dormir %zu\n", data->infos.time_to_sleep);
 	for (int i = 0; i < data->infos.nb_philo; i++)
 	{
-		printf("%d\n", data->philos[i].id);
-		printf("%zu\n", data->philos[i].start);
-		//     printf("%d\n", data->philos[i].right_fork->is_taken);
-		//     printf("%d\n", data->philos[i].left_fork->is_taken);
+		printf("philo numero : %d\n", data->philos[i].id);
+		printf("commencement des simulations : %zu\n", data->philos[i].start);
+		printf("etat de la fourchette de droite : %d\n", data->philos[i].right_fork->is_taken);
+		printf("etat de la fourchette de gauche : %d\n", data->philos[i].left_fork->is_taken);
 	}
-	printf("%zu\n", data->starting_proccesser);
-	printf("%d\n", data->die);
+	printf("commencement : %zu\n", data->starting_proccesser);
+	printf("fin de simulation : %d\n", data->die);
+	pthread_mutex_unlock(&data->mutex_printer);
 }
 
 
@@ -49,14 +51,15 @@ int __simulation(t_program_data *data)
 		return (-1);
 	while (i < data->infos.nb_philo)
 	{
-		if (i % 2 == 0)
+		if (data->philos->id % 2 == 0)
 			pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
 		i++;
 	}
 	i = 0;
+	__usleep(data->infos.time_to_eat);
 	while (i < data->infos.nb_philo)
 	{
-		if (i % 2 != 0)
+		if (data->philos->id % 2 == 1)
 			pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
 		i++;
 	}

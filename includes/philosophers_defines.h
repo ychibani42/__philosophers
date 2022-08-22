@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:20:54 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/31 15:32:08 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/20 17:56:40 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@
 # endif
 
 # ifndef TAKE_FORK
-#  define TAKE_FORK "has taken fork"
+#  define TAKE_FORK "has taken a fork\n"
 # endif
 
 # ifndef IS_SLEEPING

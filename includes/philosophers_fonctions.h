@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:21:35 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/03 17:45:21 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/20 17:53:09 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int		parsing(int ac, char **av);
 */
 
 size_t	exact_time(void);
-void	state_printer(size_t time, pthread_mutex_t *printer_mutex, int id, char *state);
-
+void	state_printer(int id, char *state, t_philo *philo);
+void	__usleep(int adding_time);
 
 /*
 **      Clean
@@ -55,10 +55,26 @@ void	*routine(void *data);
 
 void	you_are_dead(t_philo *philo, int bool);
 
+
+/*
+**		Forks action
+*/
+
+void	take_right_fork(t_philo *philo);
+void	take_left_fork(t_philo *philo);
+void	take_forks(t_philo *philo);
+void	drop_right(t_philo *philo);
+void	drop_left(t_philo *philo);
+void	drop_forks(t_philo *philo);
+
 /*
 **       Philo
 */
 
+void	eating_time(t_philo *philo);
+void	sleeping_time(t_philo *philo);
 int		main(int ac, char **av);
+void	print_data(t_program_data *data);
+
 
 #endif
