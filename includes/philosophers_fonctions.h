@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:21:35 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/20 17:53:09 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/23 19:34:08 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,9 @@ void	*routine(void *data);
 
 
 /*
-**
+**		Death
 */
 
-void	you_are_dead(t_philo *philo, int bool);
 
 
 /*

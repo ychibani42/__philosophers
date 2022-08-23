@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 17:41:48 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/22 15:58:38 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/23 19:41:47 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,33 @@
 
 void take_right_fork(t_philo *philo)
 {
-	
-		pthread_mutex_lock(&philo->right_fork->fork);
-		if (!philo->right_fork->is_taken)
-		{
-			philo->right_fork->is_taken = _TRUE_;
-		}
+	while (exact_time() < )
+	pthread_mutex_lock(&philo->right_fork->fork);
+	if (!philo->right_fork->is_taken)
+		philo->right_fork->is_taken = _TRUE_;
 	state_printer(philo->id, TAKE_FORK, philo);
 }
 
 void take_left_fork(t_philo *philo)
 {
-		pthread_mutex_lock(&philo->left_fork->fork);
-		if (!philo->left_fork->is_taken)
-		{
+	pthread_mutex_lock(&philo->left_fork->fork);
+	if (!philo->left_fork->is_taken)
 			philo->left_fork->is_taken = _TRUE_;
-	}
 	state_printer(philo->id, TAKE_FORK, philo);
 }
 
 void take_forks(t_philo *philo)
 {
-	take_right_fork(philo);
-	take_left_fork(philo);
+	if (philo->id == philo->global->infos.nb_philo)
+	{
+		take_right_fork(philo);
+		take_left_fork(philo);
+	}
+	else
+	{
+		take_left_fork(philo);
+		take_right_fork(philo);
+	}
 }
 
 void	drop_right(t_philo *philo)

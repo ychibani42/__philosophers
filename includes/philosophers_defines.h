@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:20:54 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/20 17:56:40 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/23 20:33:50 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,20 @@
 #  define _FALSE_ 0
 # endif
 
+# ifndef DEAD
+#  define DEAD 0
+# endif
+
+# ifndef ALIVE
+#  define ALIVE 1
+# endif
+
 # ifndef IS_EATING
 #  define IS_EATING "is eating\n"
+# endif
+
+# ifndef IS_DEAD
+#  define IS_DEAD "died\n"
 # endif
 
 # ifndef TAKE_FORK
