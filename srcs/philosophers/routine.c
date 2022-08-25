@@ -15,8 +15,9 @@
 void	state_printer(int id, char *state, t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->mutex_printer);
+	if (nobody_died(philo))
 	printf("%05li %i %s", exact_time() - philo->start,
-			id + 1, state);	
+			id + 1, state);
 	pthread_mutex_unlock(&philo->global->mutex_printer);
 }
 
