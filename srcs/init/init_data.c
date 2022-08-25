@@ -25,6 +25,7 @@ t_info	__get_info(char **av)
 	info_to_return.time_to_die = atol(av[2]);
 	info_to_return.time_to_eat = atol(av[3]);
 	info_to_return.time_to_sleep = atol(av[4]);
+	info_to_return.to_feed = atol(av[5]);
 	return (info_to_return);
 }
 
@@ -41,10 +42,11 @@ t_philo *__init_philos(t_program_data *data, t_info infos)
 	while (i < infos.nb_philo)
 	{
 		philos[i].id = i;
+		philos[i].meal = 0;
 		philos[i].left_fork = &data->forks[i];
 		philos[i].right_fork = &data->forks[(i + 1) % infos.nb_philo];
-		philos[i].start = exact_time() + 80;
-		philos[i].end = philos[i].start + infos.time_to_die;
+		philos[i].start = data->starting_proccesser;
+		philos[i].end = data->starting_proccesser + infos.time_to_die;
 		philos[i].philo_info = infos;
 		philos[i].global = data;
 		i++;
@@ -80,12 +82,13 @@ t_program_data *__init_data(char **av)
 	data = (t_program_data *)malloc(sizeof(t_program_data));
 	if (!data)
 		return (NULL);
+	data->starting_proccesser = exact_time() + 80;
 	data->infos = __get_info(av);
 	data->forks = __init_forks_table(data->infos);
 	data->philos = __init_philos(data, data->infos);
+	data->die = 1;
 	if (!data->philos || !data->forks)
 		return (__clean(data, data->infos), NULL);
-	data->die = _FALSE_;
     pthread_mutex_init(&data->mutex_printer, NULL);
     pthread_mutex_init(&data->mutex_ressources, NULL);
 	return (data);

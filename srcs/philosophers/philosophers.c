@@ -22,16 +22,7 @@ int simulation(t_program_data *data)
 		return (-1);
 	while (i < data->infos.nb_philo)
 	{
-		if (i % 2 == 0)
-			pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
-		i++;
-	}
-	i = 0;
-	__usleep(data->infos.time_to_eat);
-	while (i < data->infos.nb_philo)
-	{
-		if (i % 2 != 0)
-			pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
+		pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
 		i++;
 	}
 	return (42);
@@ -52,22 +43,19 @@ int	simulation_finisher(t_program_data *data)
 	return (ret);
 }
 
-/*
-void	dead_philo_exit(t_philo *philo)
+
+int	check_death_global(t_program_data *data)
 {
-	// exit_all;
-	// state_printer(philo->id, IS_DEAD, philo);
+	int condition;
+
+	condition = 1;
+	pthread_mutex_lock(&data->mutex_ressources);
+	if (data->die == -1 || data->die == data->infos.nb_philo)
+		condition = 0;
+	pthread_mutex_unlock(&data->mutex_ressources);
+	return (condition);
 }
 
-void	check_death(t_program_data *data)
-{
-	while (ALIVE)
-	{
-		if (data->die == DEAD)
-			dead_philo_exit();
-	}
-}
-*/
 
 int main(int ac, char **av)
 {
@@ -80,7 +68,8 @@ int main(int ac, char **av)
 	if (!data)
 		return (printf("Malloc Error\n"), _ERROR_);
 	simulation(data);
-	check_death(data);
+	while (check_death_global(data))
+		;
 	ret = simulation_finisher(data);
 	return (ret);
 }

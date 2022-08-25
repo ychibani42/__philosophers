@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:44:07 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/19 12:25:09 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/24 19:17:56 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	__usage(void)
 {
 	printf("Usage : ");
 	printf("<number_of_philosophers>");
-	printf(" <time_to_die> <time_to_eat> <time_to_sleep>\n");
+	printf(" <time_to_die> <time_to_eat> <time_to_sleep> <philo to feed>\n");
 }
 
 int	ft_isdigit(int c)
@@ -108,7 +108,7 @@ int	parsing(int ac, char **av)
 {
 	int	i;
 
-	if (!(ac == 5))
+	if (!(ac == 6))
 		return (__usage(), _ERROR_);
 	i = 1;
 	while (i < ac)

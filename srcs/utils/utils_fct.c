@@ -6,20 +6,22 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:23:51 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/23 19:34:46 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/25 20:21:33 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-void	__usleep(int adding_time)
+void	__usleep(int adding_time, t_philo *philo)
 {
 	size_t time;
 
 	time = exact_time() + adding_time;
 	if (adding_time)
 	{
-		while (exact_time() < time)
+		while (exact_time() < time
+			&& nobody_died(philo)
+			&& exact_time() < philo->end)
 			usleep(100);
 	}
 }
@@ -52,3 +54,9 @@ void	print_data(t_program_data *data)
 	pthread_mutex_unlock(&data->mutex_printer);
 }
 
+int	__int_trn(int condition, int success, int failure)
+{
+	if (condition)
+		return (success);
+	return (failure);
+}

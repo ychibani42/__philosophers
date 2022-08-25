@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:20:54 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/23 20:33:50 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/24 17:21:37 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,10 @@
 
 # ifndef _SUCCESS_
 #  define _SUCCESS_ 1
+# endif
+
+# ifndef _FAILURE_
+#  define _FAILURE_ 1
 # endif
 
 # ifndef _TRUE_

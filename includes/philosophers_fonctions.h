@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:21:35 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/23 19:34:08 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/25 20:18:00 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ int		parsing(int ac, char **av);
 
 size_t	exact_time(void);
 void	state_printer(int id, char *state, t_philo *philo);
-void	__usleep(int adding_time);
+void	__usleep(int adding_time, t_philo *philo);
+int		nobody_died(t_philo *philo);
+void	modifier_death(t_philo *philo, int res);
 
 /*
 **      Clean

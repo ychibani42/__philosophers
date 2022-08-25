@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:13:28 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/19 13:39:12 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/25 18:17:04 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,18 @@
 
 typedef struct s_fork
 {
-	pthread_mutex_t fork;
-	int is_taken;
+	pthread_mutex_t	fork;
+	int				is_taken;
 
 } t_fork;
 
 typedef struct s_info
 {
-	int nb_philo;
-	size_t time_to_die;
-	size_t time_to_eat;
-	size_t time_to_sleep;
+	int		nb_philo;
+	int		to_feed;
+	size_t	time_to_die;
+	size_t	time_to_eat;
+	size_t	time_to_sleep;
 
 } t_info;
 
@@ -38,6 +39,7 @@ typedef struct s_philo
 	size_t					end;
 	t_fork					*right_fork;
 	t_fork					*left_fork;
+	int						meal;
 
 } t_philo;
 
