@@ -48,7 +48,7 @@ void	modifier_death(t_philo *philo, int res)
 void	sleeping_time(t_philo *philo)
 {
 	if (exact_time() > philo->end)
-		// modifier_death(philo, -1);
+		modifier_death(philo, -1);
 	state_printer(philo->id, IS_SLEEPING, philo);
 	__usleep(philo->philo_info.time_to_sleep, philo);
 	if (exact_time() > philo->end)
