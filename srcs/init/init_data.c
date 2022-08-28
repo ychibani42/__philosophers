@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 16:06:13 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/25 16:21:34by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/29 00:22:28 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ t_info	__get_info(char **av)
 	return (info_to_return);
 }
 
-t_philo *__init_philos(t_program_data *data, t_info infos)
+t_philo	*__init_philos(t_program_data *data, t_info infos)
 {
 	int		i;
-	t_philo *philos;
+	t_philo	*philos;
 
 	i = 0;
 	philos = (t_philo *)malloc(sizeof(t_philo) * infos.nb_philo);
@@ -57,9 +57,9 @@ t_philo *__init_philos(t_program_data *data, t_info infos)
 	return (philos);
 }
 
-t_fork *__init_forks_table(t_info infos)
+t_fork	*__init_forks_table(t_info infos)
 {
-	t_fork *fork_table;
+	t_fork	*fork_table;
 	int		i;
 
 	i = 0;
@@ -70,16 +70,17 @@ t_fork *__init_forks_table(t_info infos)
 	while (i < infos.nb_philo)
 	{
 		pthread_mutex_init(&fork_table[i].fork, NULL);
+		usleep(50);
 		fork_table[i].is_taken = _FALSE_;
 		i++;
 	}
 	return (fork_table);
 }
 
-t_program_data *__init_data(char **av)
+t_program_data	*__init_data(char **av)
 {
-	t_program_data *data;
-	int		i;
+	t_program_data	*data;
+	int				i;
 
 	i = 0;
 	data = (t_program_data *)malloc(sizeof(t_program_data));
@@ -91,8 +92,8 @@ t_program_data *__init_data(char **av)
 	data->philos = __init_philos(data, data->infos);
 	data->die = 1;
 	if (!data->philos || !data->forks)
-		return (__clean(data, data->infos), NULL);
-    pthread_mutex_init(&data->mutex_printer, NULL);
-    pthread_mutex_init(&data->mutex_ressources, NULL);
+		return (__clean(data), NULL);
+	pthread_mutex_init(&data->mutex_printer, NULL);
+	pthread_mutex_init(&data->mutex_ressources, NULL);
 	return (data);
 }

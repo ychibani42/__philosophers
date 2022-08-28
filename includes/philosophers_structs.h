@@ -6,19 +6,19 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:13:28 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/25 18:17:04 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/28 23:22:51 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILOSOPHERS_STRUCTS_H
-#define PHILOSOPHERS_STRUCTS_H
+# define PHILOSOPHERS_STRUCTS_H
 
 typedef struct s_fork
 {
 	pthread_mutex_t	fork;
 	int				is_taken;
 
-} t_fork;
+}	t_fork;
 
 typedef struct s_info
 {
@@ -28,7 +28,7 @@ typedef struct s_info
 	size_t	time_to_eat;
 	size_t	time_to_sleep;
 
-} t_info;
+}	t_info;
 
 typedef struct s_philo
 {
@@ -41,8 +41,7 @@ typedef struct s_philo
 	t_fork					*left_fork;
 	int						meal;
 
-} t_philo;
-
+}	t_philo;
 
 typedef struct s_program_data
 {
@@ -56,6 +55,6 @@ typedef struct s_program_data
 	pthread_mutex_t	mutex_printer;
 	pthread_mutex_t	mutex_ressources;
 
-} t_program_data;
+}	t_program_data;
 
 #endif

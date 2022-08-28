@@ -6,24 +6,11 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:44:07 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/28 17:13:58 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/28 23:20:19 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
-
-int	int_len(int nb)
-{
-	int i;
-
-	i = 0;
-	while (nb)
-	{
-		nb /= 10;
-		i++;
-	}
-	return (i);
-}
 
 void	__usage(void)
 {
@@ -32,48 +19,9 @@ void	__usage(void)
 	printf(" <time_to_die> <time_to_eat> <time_to_sleep> <philo to feed>\n");
 }
 
-int	ft_isdigit(int c)
+int	nbr_check(char *str)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
-}
-
-int	ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i])
-		i++;
-	return (i);
-}
-
-void	ft_putstr_fd(char *str, int fd)
-{
-	write(fd, str, ft_strlen(str));
-}
-
-long	_atol_(char *str)
-{
-	long nbr;
-	int i;
-
-	nbr = 0;
-	i = 0;
-	while (ft_isdigit(str[i]))
-	{
-		nbr = nbr * 10 + (str[i] - '0');
-		i++;
-	}
-	return (nbr);
-}
-
-int nbr_check(char *str)
-{
-	long nbr;
+	long	nbr;
 
 	nbr = _atol_(str);
 	if (int_len(nbr) > _INT_SIZE_MAX_ || nbr > INT_MAX || nbr <= 0)
@@ -81,10 +29,10 @@ int nbr_check(char *str)
 	return (_SUCCESS_);
 }
 
-int __check_integer(char *str)
+int	__check_integer(char *str)
 {
-	int i;
-	int len;
+	int	i;
+	int	len;
 
 	i = 0;
 	len = ft_strlen(str);

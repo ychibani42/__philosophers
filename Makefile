@@ -6,13 +6,14 @@
 #    By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/26 10:09:52 by ychibani          #+#    #+#              #
-#    Updated: 2022/08/20 17:53:53 by ychibani         ###   ########.fr        #
+#    Updated: 2022/08/29 00:01:33 by ychibani         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS_FILES			=	srcs/philosophers/philosophers.c	\
 						srcs/philosophers/routine.c			\
 						srcs/parsing/parsing.c				\
+						srcs/parsing/parsing_utils.c				\
 						srcs/init/init_data.c				\
 						srcs/clean/clean.c					\
 						srcs/utils/death.c					\

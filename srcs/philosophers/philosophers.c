@@ -6,23 +6,25 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:12:03 by ychibani          #+#    #+#             */
-/*   Updated: 2022/07/19 19:23:34by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/29 00:24:08 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-int simulation(t_program_data *data)
+int	simulation(t_program_data *data)
 {
 	int			i;
 
 	i = 0;
-	data->thread_tab = (pthread_t *)malloc(sizeof(pthread_t *) * data->infos.nb_philo);
+	data->thread_tab = (pthread_t *)malloc(sizeof(pthread_t *)
+			* data->infos.nb_philo);
 	if (!(data->thread_tab))
 		return (-1);
 	while (i < data->infos.nb_philo)
 	{
 		pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
+		__usleep(80, data->philos);
 		i++;
 	}
 	return (42);
@@ -30,20 +32,19 @@ int simulation(t_program_data *data)
 
 void	simulation_finisher(t_program_data *data)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (i < data->infos.nb_philo)
-    {
+	i = 0;
+	while (i < data->infos.nb_philo)
+	{
 		pthread_join(data->thread_tab[i], NULL);
-        i++;
-    }
+		i++;
+	}
 }
-
 
 int	check_death_global(t_program_data *data)
 {
-	int condition;
+	int	condition;
 
 	condition = 1;
 	pthread_mutex_lock(&data->mutex_ressources);
@@ -53,8 +54,7 @@ int	check_death_global(t_program_data *data)
 	return (condition);
 }
 
-
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	t_program_data	*data;
 
@@ -67,6 +67,6 @@ int main(int ac, char **av)
 	while (check_death_global(data))
 		;
 	simulation_finisher(data);
-	__clean(data, data->infos);
+	__clean(data);
 	return (_SUCCESS_);
 }

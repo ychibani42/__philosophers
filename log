@@ -1,0 +1,1458 @@
+00000 1 has taken a fork
+00000 1 has taken a fork
+00000 1 is eating
+00011 3 has taken a fork
+00011 3 has taken a fork
+00011 3 is eating
+00111 5 has taken a fork
+00111 5 has taken a fork
+00111 5 is eating
+00200 1 is sleeping
+00211 3 is sleeping
+00211 2 has taken a fork
+00211 2 has taken a fork
+00211 2 is eating
+00211 7 has taken a fork
+00211 7 has taken a fork
+00211 7 is eating
+00311 5 is sleeping
+00311 4 has taken a fork
+00311 4 has taken a fork
+00311 4 is eating
+00311 9 has taken a fork
+00311 9 has taken a fork
+00311 9 is eating
+00400 1 is thinking
+00411 3 is thinking
+00411 1 has taken a fork
+00411 2 is sleeping
+00411 1 has taken a fork
+00411 1 is eating
+00411 11 has taken a fork
+00411 7 is sleeping
+00411 6 has taken a fork
+00411 11 has taken a fork
+00411 11 is eating
+00411 6 has taken a fork
+00411 6 is eating
+00511 5 is thinking
+00511 8 has taken a fork
+00511 8 has taken a fork
+00511 8 is eating
+00511 9 is sleeping
+00511 3 has taken a fork
+00511 3 has taken a fork
+00511 3 is eating
+00511 4 is sleeping
+00517 13 has taken a fork
+00517 13 has taken a fork
+00517 13 is eating
+00611 11 is sleeping
+00611 10 has taken a fork
+00611 10 has taken a fork
+00611 10 is eating
+00611 1 is sleeping
+00611 5 has taken a fork
+00611 2 is thinking
+00611 5 has taken a fork
+00611 5 is eating
+00611 6 is sleeping
+00611 7 is thinking
+00623 15 has taken a fork
+00623 15 has taken a fork
+00623 15 is eating
+00711 4 is thinking
+00715 3 is sleeping
+00715 2 has taken a fork
+00715 2 has taken a fork
+00715 2 is eating
+00715 9 is thinking
+00723 17 has taken a fork
+00723 17 has taken a fork
+00723 17 is eating
+00726 13 is sleeping
+00726 12 has taken a fork
+00726 12 has taken a fork
+00726 12 is eating
+00726 8 is sleeping
+00726 7 has taken a fork
+00726 7 has taken a fork
+00726 7 is eating
+00811 4 has taken a fork
+00811 4 has taken a fork
+00811 4 is eating
+00811 5 is sleeping
+00811 6 is thinking
+00811 1 is thinking
+00813 11 is thinking
+00814 10 is sleeping
+00814 9 has taken a fork
+00814 9 has taken a fork
+00814 9 is eating
+00823 15 is sleeping
+00823 19 has taken a fork
+00823 19 has taken a fork
+00823 19 is eating
+00823 14 has taken a fork
+00823 14 has taken a fork
+00823 14 is eating
+00915 2 is sleeping
+00915 1 has taken a fork
+00915 1 has taken a fork
+00915 1 is eating
+00915 3 is thinking
+00919 21 has taken a fork
+00919 21 has taken a fork
+00919 21 is eating
+00923 17 is sleeping
+00926 7 is sleeping
+00926 8 is thinking
+00926 12 is sleeping
+00926 6 has taken a fork
+00926 6 has taken a fork
+00926 6 is eating
+00926 11 has taken a fork
+00926 11 has taken a fork
+00926 11 is eating
+00928 16 has taken a fork
+00928 16 has taken a fork
+00928 16 is eating
+00929 13 is thinking
+01011 5 is thinking
+01015 10 is thinking
+01019 9 is sleeping
+01022 4 is sleeping
+01022 3 has taken a fork
+01022 3 has taken a fork
+01022 3 is eating
+01022 23 has taken a fork
+01022 23 has taken a fork
+01022 23 is eating
+01023 18 has taken a fork
+01023 14 is sleeping
+01023 13 has taken a fork
+01023 19 is sleeping
+01023 13 has taken a fork
+01023 13 is eating
+01023 15 is thinking
+01023 8 has taken a fork
+01023 8 has taken a fork
+01023 8 is eating
+01023 18 has taken a fork
+01023 18 is eating
+01115 2 is thinking
+01119 21 is sleeping
+01119 20 has taken a fork
+01119 20 has taken a fork
+01119 20 is eating
+01119 1 is sleeping
+01123 17 is thinking
+01127 25 has taken a fork
+01127 25 has taken a fork
+01127 25 is eating
+01127 11 is sleeping
+01127 12 is thinking
+01130 16 is sleeping
+01130 15 has taken a fork
+01130 15 has taken a fork
+01130 15 is eating
+01131 7 is thinking
+01135 10 has taken a fork
+01135 10 has taken a fork
+01135 10 is eating
+01139 5 has taken a fork
+01139 6 is sleeping
+01139 5 has taken a fork
+01139 5 is eating
+01219 9 is thinking
+01222 23 is sleeping
+01222 22 has taken a fork
+01222 3 is sleeping
+01222 4 is thinking
+01222 22 has taken a fork
+01222 22 is eating
+01222 2 has taken a fork
+01222 2 has taken a fork
+01222 2 is eating
+01223 8 is sleeping
+01227 19 is thinking
+01227 7 has taken a fork
+01227 7 has taken a fork
+01227 7 is eating
+01228 14 is thinking
+01235 18 is sleeping
+01243 17 has taken a fork
+01243 17 has taken a fork
+01243 17 is eating
+01243 27 has taken a fork
+01243 27 has taken a fork
+01243 27 is eating
+01245 12 has taken a fork
+01245 12 has taken a fork
+01245 12 is eating
+01247 13 is sleeping
+01319 21 is thinking
+01319 1 is thinking
+01322 20 is sleeping
+01327 25 is sleeping
+01327 24 has taken a fork
+01327 24 has taken a fork
+01327 11 is thinking
+01327 24 is eating
+01328 19 has taken a fork
+01328 19 has taken a fork
+01328 19 is eating
+01330 16 is thinking
+01331 15 is sleeping
+01335 9 has taken a fork
+01335 10 is sleeping
+01335 14 has taken a fork
+01335 14 has taken a fork
+01335 14 is eating
+01338 9 has taken a fork
+01338 9 is eating
+01339 4 has taken a fork
+01339 5 is sleeping
+01339 4 has taken a fork
+01339 4 is eating
+01339 6 is thinking
+01343 29 has taken a fork
+01343 29 has taken a fork
+01343 29 is eating
+01422 2 is sleeping
+01422 3 is thinking
+01422 22 is sleeping
+01422 23 is thinking
+01422 21 has taken a fork
+01422 21 has taken a fork
+01422 21 is eating
+01423 8 is thinking
+01427 6 has taken a fork
+01427 6 has taken a fork
+01427 6 is eating
+01427 7 is sleeping
+01435 18 is thinking
+01443 17 is sleeping
+01443 31 has taken a fork
+01443 31 has taken a fork
+01443 31 is eating
+01443 16 has taken a fork
+01443 16 has taken a fork
+01443 16 is eating
+01443 27 is sleeping
+01443 1 has taken a fork
+01443 1 has taken a fork
+01443 1 is eating
+01443 26 has taken a fork
+01443 26 has taken a fork
+01443 26 is eating
+01445 12 is sleeping
+01445 11 has taken a fork
+01445 11 has taken a fork
+01445 11 is eating
+01447 13 is thinking
+01522 20 is thinking
+01527 25 is thinking
+01527 24 is sleeping
+01527 23 has taken a fork
+01527 23 has taken a fork
+01527 23 is eating
+01528 19 is sleeping
+01528 18 has taken a fork
+01528 18 has taken a fork
+01528 18 is eating
+01531 15 is thinking
+01535 10 is thinking
+01535 14 is sleeping
+01538 9 is sleeping
+01538 8 has taken a fork
+01538 8 has taken a fork
+01538 8 is eating
+01539 5 is thinking
+01539 3 has taken a fork
+01539 3 has taken a fork
+01539 3 is eating
+01539 4 is sleeping
+01543 29 is sleeping
+01555 13 has taken a fork
+01555 13 has taken a fork
+01555 13 is eating
+01555 28 has taken a fork
+01555 28 has taken a fork
+01555 28 is eating
+01563 33 has taken a fork
+01563 33 has taken a fork
+01563 33 is eating
+01622 2 is thinking
+01622 22 is thinking
+01622 21 is sleeping
+01627 5 has taken a fork
+01627 5 has taken a fork
+01627 5 is eating
+01627 6 is sleeping
+01627 7 is thinking
+01632 20 has taken a fork
+01632 20 has taken a fork
+01632 20 is eating
+01643 17 is thinking
+01643 1 is sleeping
+01643 16 is sleeping
+01643 15 has taken a fork
+01643 15 has taken a fork
+01643 15 is eating
+01643 26 is sleeping
+01643 25 has taken a fork
+01643 25 has taken a fork
+01643 25 is eating
+01643 27 is thinking
+01643 31 is sleeping
+01645 12 is thinking
+01645 35 has taken a fork
+01645 35 has taken a fork
+01645 35 is eating
+01645 11 is sleeping
+01645 10 has taken a fork
+01645 10 has taken a fork
+01645 10 is eating
+01675 30 has taken a fork
+01675 30 has taken a fork
+01675 30 is eating
+01727 23 is sleeping
+01727 24 is thinking
+01728 19 is thinking
+01731 18 is sleeping
+01731 17 has taken a fork
+01731 17 has taken a fork
+01731 17 is eating
+01735 14 is thinking
+01738 9 is thinking
+01738 8 is sleeping
+01739 4 is thinking
+01739 7 has taken a fork
+01739 7 has taken a fork
+01739 7 is eating
+01743 29 is thinking
+01743 22 has taken a fork
+01743 22 has taken a fork
+01743 22 is eating
+01743 37 has taken a fork
+01743 37 has taken a fork
+01743 37 is eating
+01745 3 is sleeping
+01745 2 has taken a fork
+01745 2 has taken a fork
+01745 2 is eating
+01755 28 is sleeping
+01755 27 has taken a fork
+01755 27 has taken a fork
+01755 27 is eating
+01755 13 is sleeping
+01755 12 has taken a fork
+01755 12 has taken a fork
+01755 12 is eating
+01763 33 is sleeping
+01769 32 has taken a fork
+01769 32 has taken a fork
+01769 32 is eating
+01822 21 is thinking
+01827 5 is sleeping
+01827 4 has taken a fork
+01827 4 has taken a fork
+01827 4 is eating
+01827 6 is thinking
+01832 20 is sleeping
+01839 19 has taken a fork
+01839 19 has taken a fork
+01839 19 is eating
+01843 31 is thinking
+01843 15 is sleeping
+01843 25 is sleeping
+01843 1 is thinking
+01843 14 has taken a fork
+01843 14 has taken a fork
+01843 14 is eating
+01843 16 is thinking
+01843 26 is thinking
+01845 10 is sleeping
+01845 9 has taken a fork
+01845 9 has taken a fork
+01845 9 is eating
+01845 35 is sleeping
+01845 24 has taken a fork
+01845 24 has taken a fork
+01845 11 is thinking
+01845 24 is eating
+01845 34 has taken a fork
+01845 34 has taken a fork
+01845 34 is eating
+01852 39 has taken a fork
+01852 39 has taken a fork
+01852 39 is eating
+01875 30 is sleeping
+01875 29 has taken a fork
+01875 29 has taken a fork
+01875 29 is eating
+01927 23 is thinking
+01931 17 is sleeping
+01931 16 has taken a fork
+01931 16 has taken a fork
+01931 16 is eating
+01931 18 is thinking
+01938 8 is thinking
+01943 7 is sleeping
+01943 21 has taken a fork
+01943 21 has taken a fork
+01943 21 is eating
+01943 22 is sleeping
+01943 6 has taken a fork
+01943 6 has taken a fork
+01943 6 is eating
+01945 3 is thinking
+01947 2 is sleeping
+01947 1 has taken a fork
+01947 1 has taken a fork
+01947 1 is eating
+01952 41 has taken a fork
+01952 41 has taken a fork
+01952 41 is eating
+01955 28 is thinking
+01955 27 is sleeping
+01955 12 is sleeping
+01955 13 is thinking
+01955 26 has taken a fork
+01955 26 has taken a fork
+01955 26 is eating
+01955 11 has taken a fork
+01955 11 has taken a fork
+01955 11 is eating
+01963 33 is thinking
+01966 37 is sleeping
+01966 36 has taken a fork
+01966 36 has taken a fork
+01966 36 is eating
+01969 31 has taken a fork
+01969 31 has taken a fork
+01969 31 is eating
+01969 32 is sleeping
+02027 5 is thinking
+02029 4 is sleeping
+02032 20 is thinking
+02035 3 has taken a fork
+02035 3 has taken a fork
+02035 3 is eating
+02039 19 is sleeping
+02043 25 is thinking
+02043 15 is thinking
+02043 18 has taken a fork
+02043 18 has taken a fork
+02043 18 is eating
+02045 14 is sleeping
+02045 10 is thinking
+02046 13 has taken a fork
+02046 13 has taken a fork
+02046 13 is eating
+02050 43 has taken a fork
+02050 43 has taken a fork
+02050 43 is eating
+02051 24 is sleeping
+02051 35 is thinking
+02051 23 has taken a fork
+02051 23 has taken a fork
+02051 23 is eating
+02055 9 is sleeping
+02055 8 has taken a fork
+02055 8 has taken a fork
+02055 8 is eating
+02055 34 is sleeping
+02055 33 has taken a fork
+02055 33 has taken a fork
+02055 33 is eating
+02067 39 is sleeping
+02067 38 has taken a fork
+02067 38 has taken a fork
+02067 38 is eating
+02075 30 is thinking
+02075 29 is sleeping
+02076 28 has taken a fork
+02076 28 has taken a fork
+02076 28 is eating
+02131 17 is thinking
+02131 16 is sleeping
+02131 15 has taken a fork
+02131 15 has taken a fork
+02131 15 is eating
+02143 5 has taken a fork
+02143 21 is sleeping
+02143 6 is sleeping
+02143 22 is thinking
+02143 5 has taken a fork
+02143 5 is eating
+02143 20 has taken a fork
+02143 20 has taken a fork
+02143 20 is eating
+02147 1 is sleeping
+02147 2 is thinking
+02148 7 is thinking
+02152 41 is sleeping
+02152 40 has taken a fork
+02152 40 has taken a fork
+02152 40 is eating
+02153 45 has taken a fork
+02153 45 has taken a fork
+02153 45 is eating
+02155 27 is thinking
+02155 12 is thinking
+02159 26 is sleeping
+02159 25 has taken a fork
+02159 25 has taken a fork
+02159 25 is eating
+02159 11 is sleeping
+02159 10 has taken a fork
+02159 10 has taken a fork
+02159 10 is eating
+02166 35 has taken a fork
+02166 35 has taken a fork
+02166 35 is eating
+02166 36 is sleeping
+02166 37 is thinking
+02169 31 is sleeping
+02171 32 is thinking
+02187 30 has taken a fork
+02187 30 has taken a fork
+02187 30 is eating
+02229 4 is thinking
+02235 3 is sleeping
+02239 19 is thinking
+02243 18 is sleeping
+02245 14 is thinking
+02247 2 has taken a fork
+02247 2 has taken a fork
+02247 2 is eating
+02247 13 is sleeping
+02251 24 is thinking
+02251 23 is sleeping
+02251 12 has taken a fork
+02251 12 has taken a fork
+02251 12 is eating
+02251 22 has taken a fork
+02251 22 has taken a fork
+02251 22 is eating
+02251 47 has taken a fork
+02251 47 has taken a fork
+02251 47 is eating
+02255 33 is sleeping
+02255 8 is sleeping
+02255 7 has taken a fork
+02255 7 has taken a fork
+02255 7 is eating
+02255 34 is thinking
+02259 32 has taken a fork
+02259 32 has taken a fork
+02259 32 is eating
+02259 17 has taken a fork
+02259 17 has taken a fork
+02259 17 is eating
+02259 9 is thinking
+02267 39 is thinking
+02270 38 is sleeping
+02270 37 has taken a fork
+02270 37 has taken a fork
+02270 37 is eating
+02275 29 is thinking
+02276 27 has taken a fork
+02276 27 has taken a fork
+02276 27 is eating
+02276 28 is sleeping
+02295 42 has taken a fork
+02295 42 has taken a fork
+02295 42 is eating
+02295 43 is sleeping
+02331 16 is thinking
+02335 15 is sleeping
+02335 14 has taken a fork
+02335 14 has taken a fork
+02335 14 is eating
+02343 6 is thinking
+02347 20 is sleeping
+02347 1 is thinking
+02347 19 has taken a fork
+02347 19 has taken a fork
+02347 19 is eating
+02351 21 is thinking
+02355 40 is sleeping
+02355 41 is thinking
+02356 39 has taken a fork
+02356 39 has taken a fork
+02356 39 is eating
+02356 49 has taken a fork
+02356 49 has taken a fork
+02356 49 is eating
+02359 11 is thinking
+02363 45 is sleeping
+02363 26 is thinking
+02367 36 is thinking
+02371 35 is sleeping
+02371 5 is sleeping
+02371 31 is thinking
+02371 4 has taken a fork
+02371 4 has taken a fork
+02371 4 is eating
+02372 34 has taken a fork
+02372 34 has taken a fork
+02372 34 is eating
+02375 25 is sleeping
+02375 24 has taken a fork
+02375 24 has taken a fork
+02375 24 is eating
+02375 9 has taken a fork
+02375 9 has taken a fork
+02375 9 is eating
+02375 10 is sleeping
+02387 29 has taken a fork
+02387 29 has taken a fork
+02387 29 is eating
+02387 30 is sleeping
+02435 3 is thinking
+02443 18 is thinking
+02443 44 has taken a fork
+02443 44 has taken a fork
+02443 44 is eating
+02447 13 is thinking
+02452 2 is sleeping
+02452 47 is sleeping
+02452 22 is sleeping
+02452 12 is sleeping
+02452 23 is thinking
+02453 46 has taken a fork
+02453 46 has taken a fork
+02453 46 is eating
+02455 1 has taken a fork
+02455 1 has taken a fork
+02455 1 is eating
+02455 11 has taken a fork
+02455 11 has taken a fork
+02455 11 is eating
+02455 33 is thinking
+02458 51 has taken a fork
+02458 51 has taken a fork
+02458 51 is eating
+02459 17 is sleeping
+02459 8 is thinking
+02463 7 is sleeping
+02463 32 is sleeping
+02467 6 has taken a fork
+02467 6 has taken a fork
+02467 6 is eating
+02467 21 has taken a fork
+02467 21 has taken a fork
+02467 21 is eating
+02467 16 has taken a fork
+02467 16 has taken a fork
+02467 16 is eating
+02469 31 has taken a fork
+02469 31 has taken a fork
+02469 31 is eating
+02470 38 is thinking
+02472 36 has taken a fork
+02472 37 is sleeping
+02473 36 has taken a fork
+02473 36 is eating
+02476 28 is thinking
+02484 27 is sleeping
+02484 26 has taken a fork
+02484 26 has taken a fork
+02484 26 is eating
+02495 43 is thinking
+02495 42 is sleeping
+02495 41 has taken a fork
+02495 41 has taken a fork
+02495 41 is eating
+02535 15 is thinking
+02539 14 is sleeping
+02543 13 has taken a fork
+02543 13 has taken a fork
+02543 13 is eating
+02547 19 is sleeping
+02547 20 is thinking
+02547 18 has taken a fork
+02547 18 has taken a fork
+02547 18 is eating
+02554 53 has taken a fork
+02554 53 has taken a fork
+02554 53 is eating
+02555 40 is thinking
+02559 39 is sleeping
+02559 49 is sleeping
+02559 38 has taken a fork
+02559 38 has taken a fork
+02559 38 is eating
+02563 45 is thinking
+02571 4 is sleeping
+02571 48 has taken a fork
+02571 48 has taken a fork
+02571 48 is eating
+02571 35 is thinking
+02571 3 has taken a fork
+02571 3 has taken a fork
+02571 3 is eating
+02572 34 is sleeping
+02572 33 has taken a fork
+02572 33 has taken a fork
+02572 33 is eating
+02574 5 is thinking
+02575 24 is sleeping
+02575 9 is sleeping
+02575 8 has taken a fork
+02575 8 has taken a fork
+02575 8 is eating
+02575 23 has taken a fork
+02575 23 has taken a fork
+02575 23 is eating
+02575 25 is thinking
+02579 10 is thinking
+02587 30 is thinking
+02587 29 is sleeping
+02587 28 has taken a fork
+02587 28 has taken a fork
+02587 28 is eating
+02643 44 is sleeping
+02643 43 has taken a fork
+02643 43 has taken a fork
+02643 43 is eating
+02652 2 is thinking
+02653 46 is sleeping
+02655 1 is sleeping
+02655 47 is thinking
+02656 12 is thinking
+02658 51 is sleeping
+02658 50 has taken a fork
+02658 50 has taken a fork
+02658 50 is eating
+02659 22 is thinking
+02664 32 is thinking
+02664 17 is thinking
+02667 21 is sleeping
+02667 16 is sleeping
+02667 15 has taken a fork
+02667 15 has taken a fork
+02667 15 is eating
+02667 20 has taken a fork
+02667 20 has taken a fork
+02667 20 is eating
+02667 7 is thinking
+02667 55 has taken a fork
+02667 55 has taken a fork
+02667 55 is eating
+02669 31 is sleeping
+02671 30 has taken a fork
+02671 30 has taken a fork
+02671 30 is eating
+02671 45 has taken a fork
+02671 45 has taken a fork
+02671 45 is eating
+02671 6 is sleeping
+02671 5 has taken a fork
+02671 5 has taken a fork
+02671 5 is eating
+02672 37 is thinking
+02673 36 is sleeping
+02683 35 has taken a fork
+02683 35 has taken a fork
+02683 35 is eating
+02684 25 has taken a fork
+02684 26 is sleeping
+02684 25 has taken a fork
+02684 25 is eating
+02684 27 is thinking
+02695 41 is sleeping
+02695 42 is thinking
+02695 40 has taken a fork
+02695 40 has taken a fork
+02695 40 is eating
+02739 14 is thinking
+02739 11 is sleeping
+02739 10 has taken a fork
+02739 10 has taken a fork
+02739 10 is eating
+02743 13 is sleeping
+02747 17 has taken a fork
+02747 18 is sleeping
+02747 19 is thinking
+02747 17 has taken a fork
+02747 17 is eating
+02754 53 is sleeping
+02755 57 has taken a fork
+02755 57 has taken a fork
+02755 57 is eating
+02759 39 is thinking
+02759 49 is thinking
+02759 38 is sleeping
+02759 37 has taken a fork
+02759 37 has taken a fork
+02759 37 is eating
+02763 52 has taken a fork
+02763 52 has taken a fork
+02763 52 is eating
+02771 3 is sleeping
+02771 48 is sleeping
+02771 4 is thinking
+02772 32 has taken a fork
+02772 32 has taken a fork
+02772 32 is eating
+02772 47 has taken a fork
+02772 47 has taken a fork
+02772 47 is eating
+02772 12 has taken a fork
+02772 12 has taken a fork
+02772 12 is eating
+02772 33 is sleeping
+02775 7 has taken a fork
+02775 8 is sleeping
+02775 9 is thinking
+02775 2 has taken a fork
+02775 2 has taken a fork
+02775 2 is eating
+02775 34 is thinking
+02778 23 is sleeping
+02778 24 is thinking
+02778 22 has taken a fork
+02778 22 has taken a fork
+02778 22 is eating
+02779 7 has taken a fork
+02779 7 is eating
+02787 28 is sleeping
+02787 29 is thinking
+02787 27 has taken a fork
+02787 27 has taken a fork
+02787 27 is eating
+02843 44 is thinking
+02843 43 is sleeping
+02853 46 is thinking
+02853 42 has taken a fork
+02853 42 has taken a fork
+02853 42 is eating
+02855 1 is thinking
+02858 51 is thinking
+02859 50 is sleeping
+02866 49 has taken a fork
+02866 49 has taken a fork
+02866 49 is eating
+02867 21 is thinking
+02867 20 is sleeping
+02867 55 is sleeping
+02867 15 is sleeping
+02867 54 has taken a fork
+02867 54 has taken a fork
+02867 54 is eating
+02868 14 has taken a fork
+02868 14 has taken a fork
+02868 14 is eating
+02868 19 has taken a fork
+02868 19 has taken a fork
+02868 19 is eating
+02869 31 is thinking
+02871 30 is sleeping
+02871 5 is sleeping
+02871 45 is sleeping
+02871 44 has taken a fork
+02871 44 has taken a fork
+02871 44 is eating
+02871 6 is thinking
+02871 16 is thinking
+02875 36 is thinking
+02883 35 is sleeping
+02884 26 is thinking
+02887 4 has taken a fork
+02887 4 has taken a fork
+02887 4 is eating
+02895 41 is thinking
+02896 39 has taken a fork
+02896 40 is sleeping
+02896 39 has taken a fork
+02896 39 is eating
+02903 29 has taken a fork
+02903 29 has taken a fork
+02903 29 is eating
+02907 25 is sleeping
+02907 24 has taken a fork
+02907 24 has taken a fork
+02907 24 is eating
+02911 59 has taken a fork
+02911 59 has taken a fork
+02911 59 is eating
+02928 34 has taken a fork
+02928 34 has taken a fork
+02928 34 is eating
+02939 11 is thinking
+02943 13 is thinking
+02943 10 is sleeping
+02945 9 has taken a fork
+02945 9 has taken a fork
+02945 9 is eating
+02947 18 is thinking
+02951 17 is sleeping
+02954 53 is thinking
+02955 57 is sleeping
+02955 56 has taken a fork
+02955 56 has taken a fork
+02955 56 is eating
+02959 37 is sleeping
+02959 38 is thinking
+02960 61 has taken a fork
+02960 61 has taken a fork
+02960 61 is eating
+02963 52 is sleeping
+02966 36 has taken a fork
+02966 36 has taken a fork
+02966 36 is eating
+02966 51 has taken a fork
+02966 51 has taken a fork
+02966 51 is eating
+02971 48 is thinking
+02971 3 is thinking
+02972 47 is sleeping
+02972 33 is thinking
+02972 46 has taken a fork
+02972 46 has taken a fork
+02972 46 is eating
+02975 8 is thinking
+02978 23 is thinking
+02979 6 has taken a fork
+02979 7 is sleeping
+02979 31 has taken a fork
+02979 31 has taken a fork
+02979 12 is sleeping
+02979 32 is sleeping
+02979 6 has taken a fork
+02979 6 is eating
+02979 31 is eating
+02983 22 is sleeping
+02987 27 is sleeping
+02987 28 is thinking
+02987 16 has taken a fork
+02987 16 has taken a fork
+02987 16 is eating
+02987 26 has taken a fork
+02987 26 has taken a fork
+02987 26 is eating
+02990 21 has taken a fork
+02990 21 has taken a fork
+02990 21 is eating
+02991 2 is sleeping
+02991 1 has taken a fork
+02991 1 has taken a fork
+02991 1 is eating
+02994 11 has taken a fork
+02994 11 has taken a fork
+02994 11 is eating
+03043 43 is thinking
+03053 42 is sleeping
+03054 41 has taken a fork
+03054 41 has taken a fork
+03054 41 is eating
+03059 50 is thinking
+03060 63 has taken a fork
+03060 63 has taken a fork
+03060 63 is eating
+03066 49 is sleeping
+03066 48 has taken a fork
+03066 48 has taken a fork
+03066 48 is eating
+03067 20 is thinking
+03067 55 is thinking
+03071 30 is thinking
+03071 15 is thinking
+03075 54 is sleeping
+03075 5 is thinking
+03075 45 is thinking
+03075 53 has taken a fork
+03075 53 has taken a fork
+03075 53 is eating
+03079 44 is sleeping
+03083 35 is thinking
+03085 43 has taken a fork
+03085 43 has taken a fork
+03085 43 is eating
+03085 14 is sleeping
+03085 13 has taken a fork
+03085 13 has taken a fork
+03085 13 is eating
+03087 4 is sleeping
+03087 3 has taken a fork
+03087 3 has taken a fork
+03087 3 is eating
+03099 39 is sleeping
+03099 40 is thinking
+03099 38 has taken a fork
+03099 38 has taken a fork
+03099 38 is eating
+03103 29 is sleeping
+03103 28 has taken a fork
+03103 28 has taken a fork
+03103 28 is eating
+03107 25 is thinking
+03107 24 is sleeping
+03111 59 is sleeping
+03111 58 has taken a fork
+03111 58 has taken a fork
+03111 58 is eating
+03129 23 has taken a fork
+03129 23 has taken a fork
+03129 23 is eating
+03129 34 is sleeping
+03129 33 has taken a fork
+03129 33 has taken a fork
+03129 33 is eating
+03129 19 is sleeping
+03129 18 has taken a fork
+03129 18 has taken a fork
+03129 18 is eating
+03143 10 is thinking
+03147 9 is sleeping
+03147 8 has taken a fork
+03147 8 has taken a fork
+03147 8 is eating
+03151 17 is thinking
+03155 57 is thinking
+03155 56 is sleeping
+03155 55 has taken a fork
+03155 55 has taken a fork
+03155 55 is eating
+03159 65 has taken a fork
+03159 65 has taken a fork
+03159 65 is eating
+03159 37 is thinking
+03160 61 is sleeping
+03163 52 is thinking
+03166 50 has taken a fork
+03166 51 is sleeping
+03166 50 has taken a fork
+03166 50 is eating
+03169 60 has taken a fork
+03169 60 has taken a fork
+03169 60 is eating
+03172 46 is sleeping
+03172 47 is thinking
+03179 32 is thinking
+03179 7 is thinking
+03180 12 is thinking
+03183 6 is sleeping
+03183 31 is sleeping
+03183 22 is thinking
+03187 25 has taken a fork
+03187 26 is sleeping
+03187 16 is sleeping
+03187 36 is sleeping
+03187 27 is thinking
+03187 35 has taken a fork
+03187 35 has taken a fork
+03187 35 is eating
+03187 15 has taken a fork
+03187 15 has taken a fork
+03187 15 is eating
+03187 45 has taken a fork
+03187 45 has taken a fork
+03187 45 is eating
+03190 20 has taken a fork
+03190 20 has taken a fork
+03190 20 is eating
+03190 21 is sleeping
+03191 1 is sleeping
+03191 2 is thinking
+03193 25 has taken a fork
+03193 25 is eating
+03195 11 is sleeping
+03195 10 has taken a fork
+03195 10 has taken a fork
+03195 10 is eating
+03209 30 has taken a fork
+03209 30 has taken a fork
+03209 30 is eating
+03217 5 has taken a fork
+03217 5 has taken a fork
+03217 5 is eating
+03253 42 is thinking
+03254 41 is sleeping
+03254 40 has taken a fork
+03254 40 has taken a fork
+03254 40 is eating
+03260 63 is sleeping
+03261 67 has taken a fork
+03261 67 has taken a fork
+03261 67 is eating
+03263 62 has taken a fork
+03263 62 has taken a fork
+03263 62 is eating
+03266 49 is thinking
+03266 47 has taken a fork
+03266 47 has taken a fork
+03266 47 is eating
+03266 48 is sleeping
+03275 53 is sleeping
+03275 54 is thinking
+03275 52 has taken a fork
+03275 52 has taken a fork
+03275 52 is eating
+03279 44 is thinking
+03285 14 is thinking
+03285 13 is sleeping
+03285 12 has taken a fork
+03285 12 has taken a fork
+03285 12 is eating
+03287 4 is thinking
+03287 3 is sleeping
+03288 2 has taken a fork
+03288 2 has taken a fork
+03288 2 is eating
+03288 43 is sleeping
+03288 42 has taken a fork
+03288 42 has taken a fork
+03288 42 is eating
+03299 38 is sleeping
+03299 39 is thinking
+03303 28 is sleeping
+03303 29 is thinking
+03306 27 has taken a fork
+03306 27 has taken a fork
+03306 27 is eating
+03311 58 is sleeping
+03311 57 has taken a fork
+03311 57 has taken a fork
+03311 57 is eating
+03311 59 is thinking
+03315 24 is thinking
+03329 23 is sleeping
+03329 18 is sleeping
+03329 33 is sleeping
+03329 22 has taken a fork
+03329 22 has taken a fork
+03329 22 is eating
+03329 17 has taken a fork
+03329 17 has taken a fork
+03329 17 is eating
+03329 32 has taken a fork
+03329 32 has taken a fork
+03329 32 is eating
+03329 19 is thinking
+03330 34 is thinking
+03345 37 has taken a fork
+03345 37 has taken a fork
+03345 37 is eating
+03347 8 is sleeping
+03347 9 is thinking
+03347 7 has taken a fork
+03347 7 has taken a fork
+03347 7 is eating
+03355 56 is thinking
+03359 55 is sleeping
+03359 65 is sleeping
+03359 54 has taken a fork
+03359 54 has taken a fork
+03359 54 is eating
+03360 61 is thinking
+03362 69 has taken a fork
+03362 69 has taken a fork
+03362 69 is eating
+03366 51 is thinking
+03366 50 is sleeping
+03367 49 has taken a fork
+03367 49 has taken a fork
+03367 49 is eating
+03369 60 is sleeping
+03369 59 has taken a fork
+03369 59 has taken a fork
+03369 59 is eating
+03372 46 is thinking
+03383 31 is thinking
+03387 15 is sleeping
+03387 26 is thinking
+03387 16 is thinking
+03387 6 is thinking
+03390 21 is thinking
+03391 36 is thinking
+03391 45 is sleeping
+03391 35 is sleeping
+03391 1 is thinking
+03391 20 is sleeping
+03393 25 is sleeping
+03395 10 is sleeping
+03395 19 has taken a fork
+03395 19 has taken a fork
+03395 19 is eating
+03395 34 has taken a fork
+03395 34 has taken a fork
+03395 34 is eating
+03395 9 has taken a fork
+03395 11 is thinking
+03397 44 has taken a fork
+03397 44 has taken a fork
+03397 44 is eating
+03397 14 has taken a fork
+03397 14 has taken a fork
+03397 14 is eating
+03399 9 has taken a fork
+03399 9 is eating
+03409 30 is sleeping
+03409 24 has taken a fork
+03409 24 has taken a fork
+03409 24 is eating
+03409 29 has taken a fork
+03409 29 has taken a fork
+03409 29 is eating
+03417 5 is sleeping
+03417 4 has taken a fork
+03417 4 has taken a fork
+03417 4 is eating
+03438 64 has taken a fork
+03438 64 has taken a fork
+03438 64 is eating
+03454 41 is thinking
+03454 40 is sleeping
+03454 39 has taken a fork
+03454 39 has taken a fork
+03454 39 is eating
+03460 63 is thinking
+03461 67 is sleeping
+03461 66 has taken a fork
+03461 66 has taken a fork
+03461 66 is eating
+03463 62 is sleeping
+03463 61 has taken a fork
+03463 61 has taken a fork
+03463 61 is eating
+03466 48 is thinking
+03466 47 is sleeping
+03466 46 has taken a fork
+03466 46 has taken a fork
+03466 46 is eating
+03468 71 has taken a fork
+03468 71 has taken a fork
+03468 71 is eating
+03475 53 is thinking
+03485 13 is thinking
+03485 52 is sleeping
+03485 51 has taken a fork
+03485 51 has taken a fork
+03485 51 is eating
+03487 12 is sleeping
+03487 3 is thinking
+03488 43 is thinking
+03489 42 is sleeping
+03489 41 has taken a fork
+03489 41 has taken a fork
+03489 41 is eating
+03498 2 is sleeping
+03498 1 has taken a fork
+03498 1 has taken a fork
+03498 1 is eating
+03499 38 is thinking
+03503 28 is thinking
+03507 27 is sleeping
+03507 26 has taken a fork
+03507 26 has taken a fork
+03507 26 is eating
+03511 57 is sleeping
+03511 58 is thinking
+03529 18 is thinking
+03529 32 is sleeping
+03529 33 is thinking
+03529 31 has taken a fork
+03529 31 has taken a fork
+03529 31 is eating
+03529 22 is sleeping
+03529 23 is thinking
+03531 17 is sleeping
+03542 11 has taken a fork
+03542 11 has taken a fork
+03542 11 is eating
+03542 56 has taken a fork
+03542 56 has taken a fork
+03542 56 is eating
+03542 21 has taken a fork
+03542 21 has taken a fork
+03542 21 is eating
+03545 37 is sleeping
+03545 36 has taken a fork
+03545 36 has taken a fork
+03545 36 is eating
+03547 8 is thinking
+03551 16 has taken a fork
+03551 16 has taken a fork
+03551 16 is eating
+03558 7 is sleeping
+03558 6 has taken a fork
+03558 6 has taken a fork
+03558 6 is eating
+03559 65 is thinking
+03559 54 is sleeping
+03559 53 has taken a fork
+03559 53 has taken a fork
+03559 53 is eating
+03562 69 is sleeping
+03562 68 has taken a fork
+03562 68 has taken a fork
+03562 68 is eating
+03563 73 has taken a fork
+03563 73 has taken a fork
+03563 73 is eating
+03563 55 is thinking
+03566 50 is thinking
+03567 49 is sleeping
+03567 48 has taken a fork
+03567 48 has taken a fork
+03567 48 is eating
+03569 59 is sleeping
+03570 60 is thinking
+03580 58 has taken a fork
+03580 58 has taken a fork
+03580 58 is eating
+03587 15 is thinking
+03591 45 is thinking
+03592 20 is thinking
+03595 19 is sleeping
+03595 18 has taken a fork
+03595 18 has taken a fork
+03595 18 is eating
+03595 35 is thinking
+03599 9 is sleeping
+03599 8 has taken a fork
+03599 8 has taken a fork
+03599 8 is eating
+03603 10 is thinking
+03607 14 is sleeping
+03607 25 is thinking
+03607 13 has taken a fork
+03607 13 has taken a fork
+03607 13 is eating
+03607 44 is sleeping
+03607 43 has taken a fork
+03607 43 has taken a fork
+03607 43 is eating
+03609 30 is thinking
+03609 29 is sleeping
+03609 28 has taken a fork
+03609 28 has taken a fork
+03609 28 is eating
+03609 24 is sleeping
+03609 23 has taken a fork
+03609 23 has taken a fork
+03609 23 is eating
+03617 4 is sleeping
+03617 5 is thinking
+03617 3 has taken a fork
+03617 3 has taken a fork
+03617 3 is eating
+03638 64 is sleeping
+03638 63 has taken a fork
+03638 63 has taken a fork
+03638 63 is eating
+03654 40 is thinking
+03654 39 is sleeping
+03654 38 has taken a fork
+03654 38 has taken a fork
+03654 38 is eating
+03661 66 is sleeping
+03661 65 has taken a fork
+03661 65 has taken a fork
+03661 65 is eating
+03661 75 has taken a fork
+03661 75 has taken a fork
+03661 75 is eating
+03661 67 is thinking
+03663 61 is sleeping
+03663 62 is thinking
+03664 60 has taken a fork
+03664 60 has taken a fork
+03664 60 is eating
+03667 47 is thinking
+03668 71 is sleeping
+03671 46 is sleeping
+03673 34 is sleeping
+03673 33 has taken a fork
+03673 33 has taken a fork
+03673 33 is eating
+03674 45 has taken a fork
+03674 45 has taken a fork
+03674 45 is eating
+03674 70 has taken a fork
+03674 70 has taken a fork
+03674 70 is eating
+03685 52 is thinking
+03685 51 is sleeping
+03685 50 has taken a fork
+03685 50 has taken a fork
+03685 50 is eating
+03687 12 is thinking
+03691 42 is thinking
+03692 41 is sleeping
+03692 40 has taken a fork
+03692 40 has taken a fork
+03692 40 is eating
+03698 1 is sleeping
+03698 2 is thinking
+03707 26 is sleeping
+03707 25 has taken a fork
+03707 25 has taken a fork
+03707 25 is eating
+03707 27 is thinking
+03711 57 is thinking
+03729 22 is thinking
+03731 17 is thinking
+03731 32 is thinking
+03742 11 is sleeping
+03742 21 is sleeping
+03742 56 is sleeping
+03742 55 has taken a fork
+03742 55 has taken a fork
+03742 55 is eating
+03745 36 is sleeping
+03745 37 is thinking
+03749 20 has taken a fork
+03749 20 has taken a fork
+03749 20 is eating
+03749 10 has taken a fork
+03749 10 has taken a fork
+03749 10 is eating
+03751 15 has taken a fork
+03751 15 has taken a fork
+03751 16 is sleeping
+03751 15 is eating
+03758 6 is sleeping
+03758 31 is sleeping
+03758 7 is thinking
+03758 30 has taken a fork
+03758 30 has taken a fork
+03758 30 is eating
+03759 53 is sleeping
+03759 54 is thinking
+03759 35 has taken a fork
+03759 35 has taken a fork
+03759 35 is eating
+03760 52 has taken a fork
+03760 52 has taken a fork
+03760 52 is eating
+03762 69 is thinking
+03763 5 has taken a fork
+03763 5 has taken a fork
+03763 5 is eating
+03763 68 is sleeping
+03765 77 has taken a fork
+03765 77 has taken a fork
+03765 77 is eating
+03765 73 is sleeping
+03767 49 is thinking
+03769 59 is thinking
+03770 48 is sleeping
+03780 57 has taken a fork
+03780 58 is sleeping
+03780 57 has taken a fork
+03780 57 is eating
+03790 47 has taken a fork
+03790 47 has taken a fork
+03790 47 is eating
+03795 19 is thinking
+03799 9 is thinking
+03799 18 is sleeping
+03799 17 has taken a fork
+03799 17 has taken a fork
+03799 17 is eating

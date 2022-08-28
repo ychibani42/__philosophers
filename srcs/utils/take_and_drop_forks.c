@@ -6,13 +6,13 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 17:41:48 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/25 17:06:15by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/28 23:14:05 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-void take_right_fork(t_philo *philo)
+void	take_right_fork(t_philo *philo)
 {
 	while (exact_time() < philo->end)
 	{
@@ -28,16 +28,16 @@ void take_right_fork(t_philo *philo)
 	state_printer(philo->id, TAKE_FORK, philo);
 }
 
-void take_left_fork(t_philo *philo)
+void	take_left_fork(t_philo *philo)
 {
-	while (exact_time() <= philo->end + 1) 
+	while (exact_time() <= philo->end + 1)
 	{
 		pthread_mutex_lock(&philo->left_fork->fork);
 		if (!philo->left_fork->is_taken)
 		{
 			philo->left_fork->is_taken = _TRUE_;
 			pthread_mutex_unlock(&philo->left_fork->fork);
-			break;
+			break ;
 		}
 		pthread_mutex_unlock(&philo->left_fork->fork);
 	}
@@ -46,10 +46,10 @@ void take_left_fork(t_philo *philo)
 	state_printer(philo->id, TAKE_FORK, philo);
 }
 
-void take_forks(t_philo *philo)
+void	take_forks(t_philo *philo)
 {
-		take_right_fork(philo);
-		take_left_fork(philo);
+	take_right_fork(philo);
+	take_left_fork(philo);
 }
 
 void	drop_forks(t_philo *philo)
