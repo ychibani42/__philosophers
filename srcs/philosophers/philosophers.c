@@ -28,19 +28,16 @@ int simulation(t_program_data *data)
 	return (42);
 }
 
-int	simulation_finisher(t_program_data *data)
+void	simulation_finisher(t_program_data *data)
 {
-	int ret;
     int i;
 
     i = 0;
     while (i < data->infos.nb_philo)
     {
-		ret = pthread_join(data->thread_tab[i], &data->status);
+		pthread_join(data->thread_tab[i], NULL);
         i++;
     }
-	__clean(data, data->infos);
-	return (ret);
 }
 
 
@@ -60,7 +57,6 @@ int	check_death_global(t_program_data *data)
 int main(int ac, char **av)
 {
 	t_program_data	*data;
-	int				ret;
 
 	if (parsing(ac, av) == _ERROR_)
 		return (_ERROR_);
@@ -70,6 +66,7 @@ int main(int ac, char **av)
 	simulation(data);
 	while (check_death_global(data))
 		;
-	ret = simulation_finisher(data);
-	return (ret);
+	simulation_finisher(data);
+	__clean(data, data->infos);
+	return (_SUCCESS_);
 }

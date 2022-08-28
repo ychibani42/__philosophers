@@ -25,7 +25,10 @@ t_info	__get_info(char **av)
 	info_to_return.time_to_die = atol(av[2]);
 	info_to_return.time_to_eat = atol(av[3]);
 	info_to_return.time_to_sleep = atol(av[4]);
-	info_to_return.to_feed = atol(av[5]);
+	if (!av[5])
+		info_to_return.to_feed = -1;
+	else
+		info_to_return.to_feed = atol(av[5]);
 	return (info_to_return);
 }
 
@@ -82,7 +85,7 @@ t_program_data *__init_data(char **av)
 	data = (t_program_data *)malloc(sizeof(t_program_data));
 	if (!data)
 		return (NULL);
-	data->starting_proccesser = exact_time() + 80;
+	data->starting_proccesser = exact_time() + 100;
 	data->infos = __get_info(av);
 	data->forks = __init_forks_table(data->infos);
 	data->philos = __init_philos(data, data->infos);

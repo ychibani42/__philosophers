@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:23:51 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/25 20:21:33 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/28 19:25:15 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,13 @@ void	__usleep(int adding_time, t_philo *philo)
 	{
 		while (exact_time() < time
 			&& nobody_died(philo)
-			&& exact_time() < philo->end)
-			usleep(100);
+			&& exact_time() <= philo->end)
+		{
+			if (time - exact_time() > 100)
+				usleep(100);
+			else
+				usleep((time - exact_time()) / 10);
+		}
 	}
 }
 
@@ -46,6 +51,7 @@ void	print_data(t_program_data *data)
 	{
 		printf("philo numero : %d\n", data->philos[i].id);
 		printf("commencement des simulations : %zu\n", data->philos[i].start);
+		printf("fin des simulations : %zu\n", data->philos[i].end);
 		printf("etat de la fourchette de droite : %d\n", data->philos[i].right_fork->is_taken);
 		printf("etat de la fourchette de gauche : %d\n", data->philos[i].left_fork->is_taken);
 	}

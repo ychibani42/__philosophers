@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:44:07 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/24 19:17:56 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/28 17:13:58 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,7 @@ int	parsing(int ac, char **av)
 {
 	int	i;
 
-	if (!(ac == 6))
+	if (!(ac > 4) || !(ac < 7))
 		return (__usage(), _ERROR_);
 	i = 1;
 	while (i < ac)

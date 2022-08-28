@@ -14,7 +14,7 @@
 
 void take_right_fork(t_philo *philo)
 {
-	while (exact_time() <= philo->end + 1)
+	while (exact_time() < philo->end)
 	{
 		pthread_mutex_lock(&philo->right_fork->fork);
 		if (!philo->right_fork->is_taken)
@@ -30,7 +30,7 @@ void take_right_fork(t_philo *philo)
 
 void take_left_fork(t_philo *philo)
 {
-	while (exact_time() <= philo->end + 1)
+	while (exact_time() <= philo->end + 1) 
 	{
 		pthread_mutex_lock(&philo->left_fork->fork);
 		if (!philo->left_fork->is_taken)
@@ -52,22 +52,12 @@ void take_forks(t_philo *philo)
 		take_left_fork(philo);
 }
 
-void	drop_right(t_philo *philo)
+void	drop_forks(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->right_fork->fork);
 	philo->right_fork->is_taken = _FALSE_;
 	pthread_mutex_unlock(&philo->right_fork->fork);
-}
-
-void	drop_left(t_philo *philo)
-{
 	pthread_mutex_lock(&philo->left_fork->fork);
 	philo->left_fork->is_taken = _FALSE_;
 	pthread_mutex_unlock(&philo->left_fork->fork);
-}
-
-void	drop_forks(t_philo *philo)
-{
-		drop_right(philo);
-		drop_left(philo);
 }
