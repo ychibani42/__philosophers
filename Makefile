@@ -6,7 +6,7 @@
 #    By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/26 10:09:52 by ychibani          #+#    #+#              #
-#    Updated: 2022/08/29 00:01:33 by ychibani         ###   ########.fr        #
+#    Updated: 2022/08/30 20:21:24 by ychibani         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ SRCS_FILES			=	srcs/philosophers/philosophers.c	\
 						srcs/init/init_data.c				\
 						srcs/clean/clean.c					\
 						srcs/utils/death.c					\
-						srcs/utils/take_and_drop_forks.c	\
+						srcs/utils/take_forks.c	\
+						srcs/utils/drop_forks.c	\
 						srcs/utils/utils_fct.c	\
 
 HEADER_FILES		=	philosophers_structs.h 			\

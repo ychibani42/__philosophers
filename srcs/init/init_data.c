@@ -70,7 +70,6 @@ t_fork	*__init_forks_table(t_info infos)
 	while (i < infos.nb_philo)
 	{
 		pthread_mutex_init(&fork_table[i].fork, NULL);
-		usleep(50);
 		fork_table[i].is_taken = _FALSE_;
 		i++;
 	}
@@ -86,7 +85,7 @@ t_program_data	*__init_data(char **av)
 	data = (t_program_data *)malloc(sizeof(t_program_data));
 	if (!data)
 		return (NULL);
-	data->starting_proccesser = exact_time() + 100;
+	data->starting_proccesser = exact_time() + 80;
 	data->infos = __get_info(av);
 	data->forks = __init_forks_table(data->infos);
 	data->philos = __init_philos(data, data->infos);

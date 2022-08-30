@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 17:49:56 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/28 23:11:56 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/30 20:45:50 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,11 @@ void	*routine(void *data)
 	philo = (t_philo *)data;
 	while (exact_time() < philo->start)
 		;
+	if (philo->philo_info.nb_philo == 1)
+		modifier_death(philo, -1);
 	philo->end = exact_time() + philo->philo_info.time_to_die;
 	if (philo->id % 2 == 1)
-		__usleep(philo->philo_info.time_to_eat - 10, philo);
+		__usleep(philo->philo_info.time_to_eat, philo);
 	eating_time(philo);
 	return (NULL);
 }

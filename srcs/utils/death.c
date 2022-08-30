@@ -29,9 +29,9 @@ void	modifier_death(t_philo *philo, int res)
 	if (res == -1)
 		state_printer(philo->id, IS_DEAD, philo);
 	pthread_mutex_lock(&philo->global->mutex_ressources);
-	if (res == -1)
-		philo->global->die = -1;
 	if (res == 1 && philo->global->die != -1)
 		philo->global->die += 1;
+	if (res == -1)
+		philo->global->die = -1;
 	pthread_mutex_unlock(&philo->global->mutex_ressources);
 }

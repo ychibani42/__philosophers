@@ -6,7 +6,7 @@
 /*   By: ychibani <ychibani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:12:03 by ychibani          #+#    #+#             */
-/*   Updated: 2022/08/29 00:24:08 by ychibani         ###   ########.fr       */
+/*   Updated: 2022/08/30 20:35:39 by ychibani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int	simulation(t_program_data *data)
 	while (i < data->infos.nb_philo)
 	{
 		pthread_create(&data->thread_tab[i], NULL, &routine, &data->philos[i]);
-		__usleep(80, data->philos);
 		i++;
 	}
 	return (42);
@@ -51,6 +50,7 @@ int	check_death_global(t_program_data *data)
 	if (data->die == -1 || data->die == data->infos.nb_philo)
 		condition = 0;
 	pthread_mutex_unlock(&data->mutex_ressources);
+	usleep(1000);
 	return (condition);
 }
 
